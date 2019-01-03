@@ -28,7 +28,7 @@ export const HeroImage = styled.div`
 export const RevealP = styled.p`
     position: relative;
     &:after {
-        content: '';
+        content: ' ';
         position: absolute;
         top: 0;
         left: 0;
@@ -41,7 +41,7 @@ export const RevealP = styled.p`
 
         transition: transform 1s;
     }
-
+ 
     ${({ hide }) => hide && css`
         &:after {
             transform: rotateY(0deg);
