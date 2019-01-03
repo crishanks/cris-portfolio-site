@@ -8,20 +8,11 @@ import {
 } from './Home.style';
 import WhenInView from '../../components/WhenInView/WhenInView'
 
-export default class Home extends Component {
+class Home extends Component {
     static propTypes = {};
 
     constructor(props) {
         super(props);
-        this.state = {
-            data: 0
-        };
-    }
-
-    increment() {
-        this.setState({
-            data:this.state.data + 1
-        });
     }
 
     render() {
@@ -60,3 +51,5 @@ export default class Home extends Component {
         );
     }
 }
+
+export default Home;
